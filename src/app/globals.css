@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+:root{
+  --bs-nav-pills-link-active-bg: #ffc107 !important;
+  --swiper-theme-color: #ffc107  !important;
+}
+*{
+  font-family: 'Poppins', sans-serif;;
+}
+.nav-pills {
+  --bs-nav-pills-link-active-bg: #ffc107 !important;
+}
+
+.mycontainerchefs {
+  z-index: 99 !important;
+}
+
+.navbar-nav .nav-link.active{
+  color: yellow !important;
+  
+}
+.nav-link::after,.nav-link.active::after{
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color:#ffc107;
+}
+.nav-link:hover::after,.nav-link.active::after{
+  width: 100%;
+  transition: width .5s liner;
+}
+
+.nav-link:hover,.nav-link:active{
+  color: #ffc107 !important;
+}
+
+.chefs {
+  position: relative;
+  background-image: url(../../public/images/chefs-bg.jpg) !important;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 700px;
+}
+
+.chefs::before {
+  content: "";
+  /* background-color: rgba(103, 153, 170, 0.7); */
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.chefs_col {
+  position: relative;
+  z-index: 10;
+}
+.chefs_bottom_card{
+  position: absolute;
+  bottom: -80px;
+  left: 20px;
+  right: 20px;
+  background: #fff;
+  padding: 20px 0;
+  color: #433f39;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+.member {
+  text-align: center;
+  position: relative;
+}
+.member-info {
+  position: absolute;
+ background-color: white;
+
+ bottom: -80px;
+ left: 30px;
+ right: 30px;
+ padding: 50px 0;
+ box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+ overflow: hidden;
+ transition: max-height 0.5s ease-in-out;
+}
+.testimonial{
+  width: 100%;
+  height: 500px;
+  background-image: url(../../public/images/testimonials-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.testimonial::before{
+  content: "";
+  background-color: rgba(0, 0, 0,.7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.testimonialset{
+  position: absolute;
+  top:13%;
+}
+ul.list_unstyled{
+  list-style-type: none;
+  list-style-position: outside !important;
+  padding: 0;
+  margin: 0;
+  
+}
+@media(max-width:500px){
+  .mix_width{
+    width: 300px !important;
+    
+  }
+  .chefs_container_margin{
+  
+  margin-bottom: 100px;
+  }
+}
