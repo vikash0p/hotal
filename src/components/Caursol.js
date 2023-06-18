@@ -33,8 +33,8 @@ const Caursol = () => {
                             <p className='text-light'>Ut velit est quam dolor ad a aliquid qui aliquid. <span className=' 	d-sm-none d-md-block d-none d-sm-block'>
                             Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
                                 </span> </p>
-                            <button className="btn d-sm-none d-md-block d-none d-sm-block my-1 btn-outline-warning px-4 rounded-pill mx-5">our menu</button>
-                            <button className="btn  my-1 btn-outline-warning px-4 rounded-pill">Book your order</button>
+                          
+                            <button className="btn  my-1 btn-warning px-4 rounded-pill">Book your order</button>
                         </div>
                     </div>
                     <div className="carousel-item">

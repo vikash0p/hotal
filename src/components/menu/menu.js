@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../menu/menu.module.css'
+import { motion, AnimatePresence } from "framer-motion"
 
 const menuItems = [
     {
@@ -67,9 +68,9 @@ const menuItems = [
     },
 ]
 
-const starters=menuItems.filter((value, indx)=> value.category==='Specialty')
-const salad=menuItems.filter((value, indx)=> value.category==='Salads')
-const starter=menuItems.filter((value, indx)=> value.category==='starter')
+const starters = menuItems.filter((value, indx) => value.category === 'Specialty')
+const salad = menuItems.filter((value, indx) => value.category === 'Salads')
+const starter = menuItems.filter((value, indx) => value.category === 'starter')
 
 
 const Menu = () => {
@@ -100,86 +101,119 @@ const Menu = () => {
 
                 </div>
                 <div className="col">
+
                     <div className="tab-content" id="pills-tabContent">
                         <div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabIndex="0">
                             <div className="container">
-                                <div className="row">
-                                    {
-                                        menuItems.map((menu) => {
-                                            return (
-                                                <>
-                                                    <div className='col-12 col-sm-12 col-md-6'>
-                                                        <h5 className='text-warning'> {menu.name } <span className='text-dark'>---------------<span className='d-sm-none d-md-inline-block d-none d-sm-inline-block'> ------------------</span> ${menu.price}</span></h5>
-                                                        <p className='lh-1'>{menu.title} </p>
-                                                        <br />
-                                                    </div>
-                                                </>
+                                <motion.div layout className="row">
 
-                                            )
-                                        })
-                                    }
-                                </div>
+                                    <AnimatePresence>
+                                        {
+                                            menuItems.map((menu) => {
+                                                return (
+                                                    <>
+                                                        <motion.div layout
+                                                            initial={{ opacity: 0 }}
+                                                            animate={{ opacity: 1 }}
+                                                            exit={{ opacity: 0 }}
+                                                            className='col-12 col-sm-12 col-md-6'>
+                                                            <h5 className='text-warning'> {menu.name} <span className='text-dark'>---------------<span className='d-sm-none d-md-inline-block d-none d-sm-inline-block'> ------------------</span> ${menu.price}</span></h5>
+                                                            <p className='lh-1'>{menu.title} </p>
+                                                            <br />
+                                                        </motion.div>
+                                                    </>
+
+                                                )
+                                            })
+                                        }
+                                    </AnimatePresence>
+
+                                </motion.div>
                             </div>
 
                         </div>
                         <div className="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabIndex="0">
-                        <div className="container">
-                                <div className="row">
-                                    {
-                                        starter.map((menu) => {
-                                            return (
-                                                <>
-                                                    <div className='col-12 col-sm-12 col-md-6'>
-                                                        <h5 className='text-warning'> {menu.name } <span className='text-dark'>-------------------------------------------${menu.price}</span></h5>
-                                                        <p className='lh-1'>{menu.title} </p>
-                                                        <br />
-                                                    </div>
-                                                </>
+                            <div className="container">
+                                <motion.div layout className="row">
 
-                                            )
-                                        })
-                                    }
-                                </div>
+                                    <AnimatePresence>
+                                        {
+                                            starters.map((menu) => {
+                                                return (
+                                                    <>
+                                                        <motion.div layout
+                                                            initial={{ opacity: 0 }}
+                                                            animate={{ opacity: 1 }}
+                                                            exit={{ opacity: 0 }}
+                                                            className='col-12 col-sm-12 col-md-6'>
+                                                            <h5 className='text-warning'> {menu.name} <span className='text-dark'>---------------<span className='d-sm-none d-md-inline-block d-none d-sm-inline-block'> ------------------</span> ${menu.price}</span></h5>
+                                                            <p className='lh-1'>{menu.title} </p>
+                                                            <br />
+                                                        </motion.div>
+                                                    </>
+
+                                                )
+                                            })
+                                        }
+                                    </AnimatePresence>
+
+                                </motion.div>
                             </div>
                         </div>
                         <div className="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabIndex="0">
-                        <div className="container">
-                                <div className="row">
-                                    {
-                                        salad.map((menu) => {
-                                            return (
-                                                <>
-                                                    <div className='col-12 col-sm-12 col-md-6'>
-                                                        <h5 className='text-warning'> {menu.name } <span className='text-dark'>-------------------------------------------${menu.price}</span></h5>
-                                                        <p className='lh-1'>{menu.title} </p>
-                                                        <br />
-                                                    </div>
-                                                </>
+                            <div className="container">
+                                <motion.div layout className="row">
 
-                                            )
-                                        })
-                                    }
-                                </div>
+                                    <AnimatePresence>
+                                        {
+                                            salad.map((menu) => {
+                                                return (
+                                                    <>
+                                                        <motion.div layout
+                                                            initial={{ opacity: 0 }}
+                                                            animate={{ opacity: 1 }}
+                                                            exit={{ opacity: 0 }}
+                                                            className='col-12 col-sm-12 col-md-6'>
+                                                            <h5 className='text-warning'> {menu.name} <span className='text-dark'>---------------<span className='d-sm-none d-md-inline-block d-none d-sm-inline-block'> ------------------</span> ${menu.price}</span></h5>
+                                                            <p className='lh-1'>{menu.title} </p>
+                                                            <br />
+                                                        </motion.div>
+                                                    </>
+
+                                                )
+                                            })
+                                        }
+                                    </AnimatePresence>
+
+                                </motion.div>
                             </div>
                         </div>
                         <div className="tab-pane fade" id="pills-stater" role="tabpanel" aria-labelledby="pills-stater-tab" tabIndex="0">
-                        <div className="container">
-                                <div className="row">
-                                    {
-                                        starters.map((menu) => {
-                                            return (
-                                                <>
-                                                    <div className='col-12 col-sm-12 col-md-6'>
-                                                        <h5 className='text-warning'> {menu.name } <span className='text-dark'>-------------------------------------------${menu.price}</span></h5>
-                                                        <p className='lh-1'>{menu.title} </p>
-                                                        <br />
-                                                    </div>
-                                                </>
+                            <div className="container">
+                                <motion.div layout className="row">
 
-                                            )
-                                        })
-                                    }
-                                </div>
+                                    <AnimatePresence>
+                                        {
+                                            starter.map((menu) => {
+                                                return (
+                                                    <>
+                                                        <motion.div layout
+                                                            initial={{ opacity: 0 }}
+                                                            animate={{ opacity: 1 }}
+                                                            exit={{ opacity: 0 }}
+                                                            className='col-12 col-sm-12 col-md-6'>
+                                                            <h5 className='text-warning'> {menu.name} <span className='text-dark'>---------------<span className='d-sm-none d-md-inline-block d-none d-sm-inline-block'> ------------------</span> ${menu.price}</span></h5>
+                                                            <p className='lh-1'>{menu.title} </p>
+                                                            <br />
+                                                        </motion.div>
+                                                    </>
+
+                                                )
+                                            })
+                                        }
+                                    </AnimatePresence>
+
+                                </motion.div>
                             </div>
                         </div>
                     </div>
