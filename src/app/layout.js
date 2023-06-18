@@ -19,7 +19,7 @@ import Footer from '@/components/footer';
 
 export const metadata = {
   title: 'The Global Hotal',
-  description: ' These are just some of the common features you can expect to find in hotels. The range and availability of features may vary depending on the specific hotel and its star rating.',
+  description: 'Hotal these are just some of the common features you can expect to find in hotels. The range and availability of features may vary depending on the specific hotel and its star rating.',
  
 }
 
