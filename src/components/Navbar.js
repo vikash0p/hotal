@@ -19,11 +19,11 @@ const links = [
   },
   {
     href: '#specials',
-    name: 'specials'
+    name: 'Specials'
   },
   {
     href: '#event',
-    name: 'event'
+    name: 'Event'
   },
   {
     href: '#chefs',
