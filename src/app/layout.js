@@ -2,7 +2,6 @@
 import './globals.css'
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Hero from '@/components/Hero';
 import Navbar from '@/components/Navbar';
 import Caursol from '@/components/Caursol';
 
@@ -17,11 +16,6 @@ import Testimonials from '@/components/Testimonials';
 import Contact from '@/components/Contact';
 import Footer from '@/components/footer';
 
-export const metadata = {
-  title: 'The Global Hotal',
-  description: 'Hotal these are just some of the common features you can expect to find in hotels. The range and availability of features may vary depending on the specific hotel and its star rating.',
- 
-}
 
 
 export default function RootLayout({ children }) {
