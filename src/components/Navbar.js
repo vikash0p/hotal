@@ -1,5 +1,7 @@
+"use client"
 import Link from 'next/link'
 import React, { useEffect, useState } from 'react'
+import { usePathname } from 'next/navigation'
 
 
 const links = [
@@ -40,7 +42,8 @@ const links = [
 
 
 const Navbar = () => {
-
+  const pathname = usePathname()
+ 
   const [scrollActive, setScrollActive] = useState(false);
 
   useEffect(() => {
@@ -68,7 +71,7 @@ const Navbar = () => {
                         <>
                           <li className="nav-item">
                             <span key={idx}>
-                              <Link className="nav-link fs-5  link-light " aria-current="page" href={link.href}>{link.name}</Link>
+                              <Link className={`nav-link fs-5  link-light ${pathname == link.href ?"text-warning":"text-white" }`} aria-current="page" href={link.href}>{link.name}</Link>
                             </span>
                           </li>
                         </>

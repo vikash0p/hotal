@@ -14,36 +14,35 @@ const Caursol = () => {
                 </div>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <Image src='/images/slide-1.jpg' className="d-block w-100 img-fluid object-fit-fill position-relative" width={1000} height={500} alt="..." />
-                     
-                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <Image src='/images/slide-1.jpg' className="d-block w-100 img-fluid object-fit-fill position-relative" width={1000} height={500} alt="image" />
+
+                        <div className="position-absolute top-50 start-50 translate-middle text-center">
                             <h1 className='text-light'>Sequi ea ut et est quaerat</h1>
                             <p className='text-light'>Ut velit est quam dolor ad a aliquid qui aliquid. <span className=' 	d-sm-none d-md-block d-none d-sm-block'>
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
-                                </span> </p>
-                            <button className="btn d-sm-none d-md-block d-none d-sm-block my-1 btn-outline-warning px-4 rounded-pill mx-5">our menu</button>
-                            <button className="btn  my-1 btn-outline-warning px-4 rounded-pill">Book your order</button>
+                                Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                            </span> </p>
+
                         </div>
-                      
+
                     </div>
                     <div className="carousel-item">
                         <Image src='/images/slide-2.jpg' className="d-block w-100 img-fluid object-fit-fill position-relative" width={1000} height={500} alt="..." />
-                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <div className="position-absolute top-50 start-50 translate-middle text-center">
                             <h1 className='text-light'>Delicious Restaurant</h1>
                             <p className='text-light'>Ut velit est quam dolor ad a aliquid qui aliquid. <span className=' 	d-sm-none d-md-block d-none d-sm-block'>
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
-                                </span> </p>
-                          
+                                Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                            </span> </p>
+
                             <button className="btn  my-1 btn-warning px-4 rounded-pill">Book your order</button>
                         </div>
                     </div>
                     <div className="carousel-item">
                         <Image src='/images/slide-3.jpg' className="d-block w-100 img-fluid object-fit-fill position-relative" width={1000} height={500} alt="..." />
-                        <div class="position-absolute top-50 start-50 translate-middle text-center">
+                        <div className="position-absolute top-50 start-50 translate-middle text-center">
                             <h1 className='text-light'>Lorem Ipsum Dolor</h1>
                             <p className='text-light'>Ut velit est quam dolor ad a aliquid qui aliquid. <span className=' 	d-sm-none d-md-block d-none d-sm-block'>
-                            Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
-                                </span> </p>
+                                Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.
+                            </span> </p>
                             <button className="btn d-sm-none d-md-block d-none d-sm-block  my-1 btn-outline-warning px-4 rounded-pill mx-5">our menu</button>
                             <button className="btn  my-1 btn-outline-warning px-4 rounded-pill ">Book your order</button>
                         </div>
