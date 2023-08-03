@@ -17,8 +17,8 @@ import Contact from '@/components/Contact';
 import Footer from '@/components/footer';
 
 export const metadata = {
-  title: 'HOTAL',
-  description: 'If there is a pool, spa, gym, restaurant, or bar you are going to want to mention that. As well as free breakfast. Rooms – Inform consumers of the types of rooms you have and point out if they are accessible, spacious, modern, or well-appointed',
+  title: 'hotals',
+  description: 'hotals',
 }
  
 
